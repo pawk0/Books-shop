@@ -9,190 +9,36 @@
     <script src="script.js"></script>
 </head>
 <body>
-<header>
-    <a href="index.html"> <h1>Bookshop</h1></a>
-</header>
-
 <main>
     <section class="col col1">
         <h4>Book catalog</h4>
-
-        <section class="books-catalog">
-
-            <div class="book">
-                <img src="../../assets/images/js_1.jpg" alt="JavaScript: The Good Parts: The Good Parts">
-                <div class="book-details">
-                    <p class="title">JavaScript: The Good Parts: The Good Parts</p>
-                    <p class="obl">Douglas Crockford</p>
-                    <p class="price">Price: <span class="price-amount">30</span></p>
-                    <a class="button" href="#desc-1">Show more</a>
-                    <button class="button add-to-bag">Add to bag</button>
-
-                    <div id="desc-1" class="popup-outside">
-                        <div class="popup">
-                            <p class="title-popup">JavaScript: The Good Parts: The Good Parts</p>
-                            <div class="desc">
-                                <img src="../../assets/images/js_1.jpg" alt="JavaScript: The Good Parts: The Good Parts"
-                                     class="photo-description">
-                                <p class="obl">
-                                    With JavaScript: The Good Parts, you'll discover a beautiful, elegant, lightweight
-                                    and
-                                    highly expressive language that lets you create effective code, whether you're
-                                    managing
-                                    object libraries or just trying to get Ajax to run fast. If you develop sites or
-                                    applications for the Web, this book is an absolute must.
-                                </p>
-                            </div>
-                            <a class="close" href="#close">&times;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="book">
-                <img src="../../assets/images/js_1.jpg" alt="JavaScript: The Good Parts: The Good Parts" class="photo">
-                <div class="book-details">
-                    <p class="title">JavaScript: The Good Parts: The Good Parts</p>
-                    <p class="obl">Douglas Crockford</p>
-                    <p class="price">Price: <span class="price-amount">30</span></p>
-                    <a class="button" href="#desc-2">Show more</a>
-                    <a href="#" class="button add-to-bag">Add to bag</a>
-
-                    <div id="desc-2" class="popup-outside">
-                        <div class="popup">
-                            <p class="title-popup">JavaScript: The Good Parts: The Good Parts</p>
-                            <div class="desc">
-                                <img src="../../assets/images/js_1.jpg" alt="JavaScript: The Good Parts: The Good Parts"
-                                     class="photo-description">
-                                <p class="obl">
-                                    With JavaScript: The Good Parts, you'll discover a beautiful, elegant, lightweight
-                                    and
-                                    highly expressive language that lets you create effective code, whether you're
-                                    managing
-                                    object libraries or just trying to get Ajax to run fast. If you develop sites or
-                                    applications for the Web, this book is an absolute must.2
-                                </p>
-                            </div>
-                            <a class="close" href="#close">&times;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="book">
-                <img src="../../assets/images/js_1.jpg" alt="JavaScript: The Good Parts: The Good Parts" class="photo">
-                <div class="book-details">
-                    <p class="title">JavaScript: The Good Parts: The Good Parts</p>
-                    <p class="obl">Douglas Crockford</p>
-                    <p class="price">Price: <span class="price-amount">30</span></p>
-                    <a class="button" href="#desc-3">Show more</a>
-                    <a href="#" class="button add-to-bag">Add to bag</a>
-
-                    <div id="desc-3" class="popup-outside">
-                        <div class="popup">
-                            <p class="title-popup">JavaScript: The Good Parts: The Good Parts</p>
-                            <div class="desc">
-                                <img src="../../assets/images/js_1.jpg" alt="JavaScript: The Good Parts: The Good Parts"
-                                     class="photo-description">
-                                <p class="obl">
-                                    With JavaScript: The Good Parts, you'll discover a beautiful, elegant, lightweight
-                                    and
-                                    highly expressive language that lets you create effective code, whether you're
-                                    managing
-                                    object libraries or just trying to get Ajax to run fast. If you develop sites or
-                                    applications for the Web, this book is an absolute must.3
-                                </p>
-                            </div>
-                            <a class="close" href="#close">&times;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="book">
-                <img src="../../assets/images/js_1.jpg" alt="JavaScript: The Good Parts: The Good Parts" class="photo">
-                <div class="book-details">
-                    <p class="title">JavaScript: The Good Parts: The Good Parts</p>
-                    <p class="obl">Douglas Crockford</p>
-                    <p class="price">Price: <span class="price-amount">30</span></p>
-                    <a class="button" href="#desc-4">Show more</a>
-                    <a href="#" class="button add-to-bag">Add to bag</a>
-
-                    <div id="desc-4" class="popup-outside">
-                        <div class="popup">
-                            <p class="title-popup">JavaScript: The Good Parts: The Good Parts</p>
-                            <div class="desc">
-                                <img src="../../assets/images/js_1.jpg" alt="JavaScript: The Good Parts: The Good Parts"
-                                     class="photo-description">
-                                <p class="obl">
-                                    With JavaScript: The Good Parts, you'll discover a beautiful, elegant, lightweight
-                                    and
-                                    highly expressive language that lets you create effective code, whether you're
-                                    managing
-                                    object libraries or just trying to get Ajax to run fast. If you develop sites or
-                                    applications for the Web, this book is an absolute must.4
-                                </p>
-                            </div>
-                            <a class="close" href="#close">&times;</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <section class="books-catalog" draggable="false">
         </section>
-
-
     </section>
 
-    <section class="col col2">
+    <section id="droptarget" class="col col2">
         <h4>Order books</h4>
         <section class="order-list">
             <table class="order-list-table">
                 <thead>
                 <tr>
                     <th></th>
-                    <th>Amount</th>
                     <th>Price</th>
                     <th>Book</th>
                     <th>Remove</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td><img src="../../assets/images/js_1.jpg" alt="JavaScript: The Good Parts: The Good Parts"></td>
-                    <td><input min="1" type="number" name="amount" id="amount" value="1"></td>
-                    <td class="price">50</td>
-                    <td>
-                        <span class="title">JavaScript: The Good Parts: The Good Parts</span>
-                        <span class="obl">Douglas Crockford</span>
-                    </td>
-                    <td><a class="button close">&times;</a></td>
-                </tr>
                 </tbody>
             </table>
             <div class="confirmation">
-                <p>Total price: <span class="price">50</span></p>
-                <button id="confirm-order" class="button">Confirm order</button>
+                <p>Total price: <span class="price total-price">0</span></p>
+                <button id="confirm-order" onclick="goToOrder()" class="button">Confirm order</button>
             </div>
         </section>
 
     </section>
 </main>
-
-<footer>
-    <a class="github-link" href="https://github.com/pawk0"><img class="github-logo" alt="github logo"
-                                                                src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg">GITHUB</a>
-
-    <p>Created by Paweł Połoch</p>
-
-    <a href="https://rs.school/">
-        <img
-                class="rs-logo"
-                alt="RS School logo"
-                src="https://rs.school/images/rs_school.svg"
-        >
-    </a>
-</footer>
 
 </body>
 </html>

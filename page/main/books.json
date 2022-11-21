@@ -43,8 +43,8 @@
   },
   {
     "author": "Alex Banks, Eve Porcello",
-    "imageLink": "add image to your project,put link to it there",
-    "title": "../../assets/images/js_7.jpg",
+    "imageLink": "../../assets/images/js_7.jpg",
+    "title": "Learning React, 2nd Edition",
     "price": 25,
     "description": "If you want to learn how to build efficient React applications, this is your book. Ideal for web developers and software engineers who understand how JavaScript, CSS, and HTML work in the browser, this updated edition provides best practices and patterns for writing modern React code. No prior knowledge of React or functional JavaScript is necessary."
   },
@@ -57,8 +57,8 @@
   },
   {
     "author": "Kyle Simpson",
-    "imageLink": "add image to your project,put link to it there",
-    "title": "../../assets/images/js_9.jpg",
+    "imageLink": "../../assets/images/js_9.jpg",
+    "title": "You Don't Know JS Yet: Get Started",
     "price": 26,
     "description": "It seems like there's never been as much widespread desire before for a better way to deeply learn the fundamentals of JavaScript. But with a million blogs, books, and videos out there, just where do you START? Look no further!"
   },

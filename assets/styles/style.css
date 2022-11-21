@@ -129,8 +129,6 @@ main {
     width: 40%;
     position: relative;
     transition: all 3s ease-in-out;
-
-    overflow: hidden;
 }
 
 .close {
@@ -148,8 +146,17 @@ main {
     transition: all 200ms;
 }
 
-.popup .close:hover {
+.close:hover {
     color: #06D85F;
+    cursor: pointer;
+}
+
+.close {
+    color: #000;
+}
+
+.close:hover {
+    text-decoration: none;
 }
 
 header a, header a:visited, header a:hover, header a:active{

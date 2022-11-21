@@ -4,6 +4,7 @@ main {
     justify-content: center;
     align-items: center;
     align-content: center;
+    background: inherit;
 }
 
 legend {
@@ -16,7 +17,7 @@ legend {
     font-size: 13px;
     width: 600px;
 
-    background: #F2DEBA;
+    background: rgb(255, 239, 214);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -42,7 +43,7 @@ legend {
     width: 80%;
 }
 
-input.input-field,
+.input-field,
 .select-field {
     border: 1px solid #C2C2C2;
     box-shadow: 1px 1px 4px #EBEBEB;
@@ -53,7 +54,7 @@ input.input-field,
 
 .input-field:focus,
 .select-field:focus {
-    border: 1px solid #0C0;
+    border: 1px solid #72BEC7;
 }
 
 fieldset{
@@ -88,4 +89,44 @@ button[disabled]{
     border: 1px solid #999999;
     background-color: #cccccc;
     color: #666666;
+}
+
+input.error {
+    border-color: red;
+    color: red;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.closee {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closee:hover,
+.closee:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
