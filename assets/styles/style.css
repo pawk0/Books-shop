@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body {
+    background: #f3e1bf;
+    width: 1600px;
+    margin: 0 auto;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+header {
+    background: #F2DEBA;
+    background: url("../images/bookshop.png");
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+footer {
+    background: #72BEC7;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 25px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+
+.rs-logo, .github-logo {
+    height: 40px;
+    padding: 5px;
+}
+
+.github-link, .project-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    display: inline-block;
+    background: rgba(255, 239, 214, 0.9);
+    font-size: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+h4 {
+    text-align: center;
+    font-size: 40px;
+    padding: 0;
+    margin: 20px;
+}
+
+main {
+    background: rgb(255, 239, 214);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.button {
+    background-color: #3A8891; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.button:hover:enabled {
+    cursor: pointer;
+    background: #0E5E6F;
+    text-decoration: underline;
+}
+
+
+.popup-outside {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup-outside:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 10% auto;
+    padding: 20px;
+    background: rgb(255 239 214);
+    border-radius: 5px;
+    width: 40%;
+    position: relative;
+    transition: all 3s ease-in-out;
+}
+
+.close {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+}
+
+.close:hover {
+    color: #06D85F;
+    cursor: pointer;
+}
+
+.close {
+    color: #000;
+}
+
+.close:hover {
+    text-decoration: none;
+}
+
+header a, header a:visited, header a:hover, header a:active{
+    text-decoration: none;
+    color: black;
+}

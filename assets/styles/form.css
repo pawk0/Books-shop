@@ -1,0 +1,132 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: inherit;
+}
+
+legend {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.delivery-form {
+    font-size: 13px;
+    width: 600px;
+
+    background: rgb(255, 239, 214);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.delivery-form label > span {
+    font-weight: bold;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+
+.delivery-form span.required {
+    color: red;
+}
+
+.delivery-form input.input-field, .delivery-form .select-field {
+    width: 80%;
+}
+
+.input-field,
+.select-field {
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    padding: 7px;
+    outline: none;
+}
+
+.input-field:focus,
+.select-field:focus {
+    border: 1px solid #72BEC7;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px
+}
+
+label{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.elements{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+
+    font-weight: 600    ;
+}
+
+button:disabled,
+button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+input.error {
+    border-color: red;
+    color: red;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.closee {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closee:hover,
+.closee:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

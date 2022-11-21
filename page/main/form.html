@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookshop Form</title>
+    <link rel="stylesheet" href="../../assets/styles/normalize.css">
+    <link rel="stylesheet" href="../../assets/styles/style.css">
+    <link rel="stylesheet" href="../../assets/styles/form.css">
+    <script src="form.js" defer></script>
+</head>
+<body>
+<main>
+    <div class="delivery-form">
+        <form action="" method="post" class="form">
+            <fieldset>
+                <legend>Delivery Details:</legend>
+                <label for="name">
+                    <span>Name <span class="required">*</span></span>
+                    <input id="name" type="text" class="input-field" name="name" value=""
+                           minlength="4" pattern="^[a-zA-Z]+$" required>
+                </label>
+                <label for="surname">
+                    <span>Surname <span class="required">*</span></span>
+                    <input id="surname" type="text" class="input-field" name="surname" value=""
+                           minlength="5" pattern="^[a-zA-Z]+$" required>
+                </label>
+                <label for="street">
+                    <span>Street <span class="required">*</span></span>
+                    <input id="street" type="text" class="input-field" name="street" value=""
+                           minlength="5" pattern="^[a-zA-Z0-9]+$" required>
+                </label>
+
+
+                <label for="house">
+                    <span>House number <span class="required">*</span></span>
+                    <input id="house" type="number" class="input-field" name="house" value=""
+                           min="1" required>
+                </label>
+                <label for="flat">
+                    <span>Flat number <span class="required">*</span></span>
+                    <input id="flat" type="number" class="input-field" name="flat" value=""
+                           min="1" required>
+                </label>
+                <label for="date">
+                    <span>Delivery Date <span class="required">*</span></span>
+                    <input id="date" type="date" class="input-field" name="date" value="" required>
+                </label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Payment method:</legend>
+                <div class="payment">
+                    <div class="elements">
+                        <input type="radio" id="card" name="payment" value="card" checked>
+                        <label for="card">Card</label>
+                    </div>
+
+                    <div class="elements">
+                        <input type="radio" id="cash" name="payment" value="cash">
+                        <label for="cash">Cash</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset id="gifts">
+                <legend>Choose max 2 gifts:</legend>
+                <div class="elements">
+                    <input class="check" id="gift" type="checkbox" value="gift">
+                    <label for="gift">Pack as a gift</label>
+                </div>
+                <div class="elements">
+                    <input class="check" id="postcard" type="checkbox" value="postcard">
+                    <label for="postcard">Add postcard</label>
+                </div>
+                <div class="elements">
+                    <input class="check" id="discount" type="checkbox" value="discount">
+                    <label for="discount">Provide 2% discount to the next time</label>
+                </div>
+                <div class="elements">
+                    <input class="check" id="pen-or-pencil" type="checkbox" value="pen-or-pencil">
+                    <label for="pen-or-pencil">Branded pen or pencil</label>
+                </div>
+            </fieldset>
+
+
+            <button id="confirm-delivery" class="button" disabled>Confirm order</button>
+
+        </form>
+    </div>
+
+</main>
+</body>
+</html>
