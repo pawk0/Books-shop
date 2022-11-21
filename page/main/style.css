@@ -31,6 +31,36 @@ header {
     align-content: center;
 }
 
+footer{
+    background: #72BEC7;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 25px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+
+.rs-logo {
+    height: 40px;
+    padding: 10px;
+}
+
+.github-logo {
+    height: 15px;
+    margin-right: 5px;
+}
+
+.github-link, .project-link {
+    text-decoration: none;
+    color: #fff;
+}
+
 h1 {
     display: inline-block;
     background: rgba(255, 239, 214, 0.9);
@@ -268,3 +298,4 @@ td span {
 .price {
     font-weight: 700;
 }
+
