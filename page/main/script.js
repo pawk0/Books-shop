@@ -25,8 +25,8 @@ function loadFooter() {
     fImg.alt="github logo";
     fImg.src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg";
 
+    // fLink.innerText="GITHUB";
     fLink.append(fImg);
-    fLink.innerText="GITHUB";
 
     let fLink2 = document.createElement("a");
     fLink2.href= "https://rs.school/"
@@ -47,6 +47,105 @@ function loadFooter() {
 
 function loadMain() {
     let main = document.createElement('main');
+
+    let mSection1 = document.createElement('section');
+    main.append(mSection1);
+    mSection1.classList.add('col')
+    mSection1.classList.add('col1')
+
+    let h41 = document.createElement('h4');
+    mSection1.append(h41);
+    h41.innerText = "Book catalog";
+
+    let mSection11 = document.createElement('section');
+    mSection1.append(mSection11);
+    mSection11.classList.add('books-catalog');
+    mSection11.draggable=false;
+
+
+    let mSection2 = document.createElement('section');
+    main.append(mSection2);
+    mSection2.classList.add('col')
+    mSection2.classList.add('col2')
+    mSection2.id="droptarget";
+
+    let h42 = document.createElement('h4');
+    mSection2.append(h42);
+    h42.innerText = "Order books";
+
+
+    let mSection21 = document.createElement('section');
+    mSection2.append(mSection21);
+    mSection21.classList.add('order-list');
+
+    let table = document.createElement('table');
+    mSection21.append(table);
+    table.classList.add('order-list-table')
+
+    let thead = document.createElement('thead');
+    table.append(thead);
+
+    let tr = document.createElement('tr');
+    thead.append(tr);
+
+    let th1 = document.createElement('th');
+    let th2 = document.createElement('th');
+    th2.innerHTML = "Price";
+    let th3 = document.createElement('th');
+    th3.innerHTML = "Book";
+    let th4 = document.createElement('th');
+    th4.innerHTML = "Remove";
+
+    tr.append(th1);
+    tr.append(th2);
+    tr.append(th3);
+    tr.append(th4);
+
+
+
+
+
+
+
+
+
+
+
+
+    let tbody = document.createElement('tbody');
+    table.append(tbody);
+
+
+
+
+
+
+    let div2 = document.createElement('div');
+    mSection21.append(div2);
+    div2.classList.add('confirmation')
+
+    let pp = document.createElement('p');
+    div2.append(pp);
+    pp.innerText="Total price: "
+
+    let spn1 = document.createElement('span');
+    pp.append(spn1);
+    spn1.classList.add("price")
+    spn1.classList.add("total-price")
+    spn1.innerText = "0";
+
+    let btn1 = document.createElement('button');
+    div2.append(btn1);
+
+    btn1.id="confirm-order";
+    btn1.classList.add("button");
+    btn1.innerText = "Confirm order";
+    btn1.onclick=goToOrder;
+
+
+
+
+    return main;
 }
 
 async function getData(url) {

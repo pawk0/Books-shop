@@ -46,14 +46,9 @@ footer {
 }
 
 
-.rs-logo {
+.rs-logo, .github-logo {
     height: 40px;
-    padding: 10px;
-}
-
-.github-logo {
-    height: 15px;
-    margin-right: 5px;
+    padding: 5px;
 }
 
 .github-link, .project-link {
