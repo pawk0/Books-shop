@@ -4,7 +4,7 @@ async function getData(url) {
 }
 
 async function start() {
-    const urlData = '../../assets/data/books.json';
+    const urlData = 'books.json';
     const data = await getData(urlData);
     console.log(data);
 }
